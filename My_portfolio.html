@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abiram — Personal Portfolio</title>
+  <meta name="description" content="Abiram | .NET Full Stack Developer Portfolio">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="logo">AR</div>
+      <div>
+        <div style="font-weight:700">Abiram</div>
+        <div style="font-size:12px;color:var(--muted)">.NET Full Stack Developer</div>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-controls">
+      <button id="themeToggle" class="btn">🌙</button>
+      <a class="btn primary" href="Abiram_Resume.pdf" download>Download Resume</a>
+    </div>
+  </header>
+
+  <section id="about" class="hero">
+    <div class="intro card">
+      <h1>Welcome! I'm Abiram, a passionate .NET Full Stack Developer.</h1>
+      <p>Motivated .NET and Full Stack Developer with strong knowledge in C#, ASP.NET, Angular, and SQL. Eager to build secure, high-performance web applications and contribute to real-world projects while growing within a dynamic development team.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn" href="#contact">Contact Me</a>
+      </div>
+      <div style="margin-top:16px" class="socials">
+        <a class="icon-btn" href="https://github.com/" target="_blank">GH</a>
+        <a class="icon-btn" href="https://linkedin.com/" target="_blank">in</a>
+        <a class="icon-btn" href="https://twitter.com/" target="_blank">tw</a>
+        <a class="icon-btn" href="https://instagram.com/" target="_blank">ig</a>
+      </div>
+    </div>
+
+    <aside class="card">
+      <div class="avatar">
+        <img src="img.jpg" alt="Avatar">
+      </div>
+      <div style="text-align:center;margin-top:10px;font-size:13px;color:var(--muted)">.NET Full Stack Developer</div>
+    </aside>
+  </section>
+
+  <section id="skills" class="card">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-tag">HTML & CSS</div>
+      <div class="skill-tag">JavaScript</div>
+      <div class="skill-tag">AngularJS</div>
+      <div class="skill-tag">C#</div>
+      <div class="skill-tag">ASP.NET / MVC</div>
+      <div class="skill-tag">SQL</div>
+      <div class="skill-tag">.NET Core</div>
+      <div class="skill-tag">Git / GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <article class="card project-card">
+        <strong>Portfolio Website</strong>
+        <p style="color:var(--muted)">A modern, responsive personal portfolio built using HTML, CSS, and JavaScript with dark/light themes and smooth animations.</p>
+        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+      </article>
+      <article class="card project-card">
+        <strong>E-Commerce Website</strong>
+        <p style="color:var(--muted)">A C# ASP.NET MVC-based e-commerce website for managing products, users, and orders efficiently.</p>
+        <div class="tags"><span class="tag">C#</span><span class="tag">ASP.NET MVC</span><span class="tag">SQL</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <form id="contactForm" class="contact-form">
+      <input id="name" placeholder="Your name" required>
+      <input id="email" type="email" placeholder="you@example.com" required>
+      <textarea id="message" placeholder="Your message" required></textarea>
+      <div style="display:flex;gap:10px">
+        <button type="submit" class="btn primary">Send Message</button>
+        <button type="button" class="btn" id="clearBtn">Clear</button>
+      </div>
+    </form>
+  </section>
+
+  <footer style="text-align:center;color:var(--muted);padding:18px 0">
+    Made with ♥ — © <span id="year"></span> Abiram
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
